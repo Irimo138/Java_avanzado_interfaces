@@ -1,0 +1,30 @@
+:root {
+    box-sizing: border-box; 
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit; 
+}
+
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-gap: 0.5em 1em;
+    height: 85vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+header{
+    background-color: brown;
+    grid-column: 1/6;
+    text-align: center;
+}
+
+#caja1{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    background-color: blue;
+}

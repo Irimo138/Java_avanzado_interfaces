@@ -1,0 +1,11 @@
+.box {
+	width: 250px;
+	height: 250px;
+	background: #09f;
+	border: 10px solid blue;
+	padding: 10px;
+
+	/*por defecto tiene box-sizing: content-box;*/
+	box-sizing: border-box;
+
+}

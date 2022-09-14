@@ -1,0 +1,17 @@
+
+
+div > h1{
+    background-color: blueviolet;
+}
+
+article{
+    text-align: center;
+    border:1px black solid;
+    margin: 2vw;
+    border-radius: 4px;
+}
+
+article .bordeado{
+    border:1px black solid;
+    margin: 2vw;
+}
