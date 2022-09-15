@@ -1,0 +1,59 @@
+:root {
+    box-sizing: border-box; 
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit; 
+}
+
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-gap: 0.5em 1em;
+    grid-template-areas:
+                        "uno dos"
+                        "tre tre"
+                        "cin sei"
+                        "sie sei"
+                        "cua cua"
+                        "och nue";
+    height: 85vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.container div{
+    border: 1px solid black;
+}
+.container{
+    grid-column: 1/4;
+}
+
+#uno{
+    grid-area: uno;
+}
+#dos{
+    grid-area: dos;
+}
+#tre{
+    grid-area: tre;
+}
+#cua{
+    grid-area: cua;
+}
+#cin{
+    grid-area: cin;
+}
+#sei{
+    grid-area: sei;
+}
+#sie{
+    grid-area: sie;
+}
+#och{
+    grid-area: och;
+}
+#nue{
+    grid-area: nue;
+}

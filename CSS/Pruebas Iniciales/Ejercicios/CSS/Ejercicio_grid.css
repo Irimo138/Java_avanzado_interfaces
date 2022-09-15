@@ -28,3 +28,37 @@ header{
     grid-row: 2/4;
     background-color: blue;
 }
+#caja2{
+    grid-column: 4/6;
+    grid-row: 2/3;
+    background-color: purple;
+}
+#caja3{
+    grid-column: 4/6;
+    grid-row: 3/5;
+    background-color: yellow;
+}
+
+.container2{
+    display: grid;
+    grid-gap: 0.5em 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+}
+
+.texto{
+    grid-column: 2/4;
+}
+
+img{
+    width:250px;
+}
+
+p{
+    text-align: justify;
+}
+h2{
+    text-align: center;
+    background-color: blueviolet;
+    grid-column: 1/6;
+}
