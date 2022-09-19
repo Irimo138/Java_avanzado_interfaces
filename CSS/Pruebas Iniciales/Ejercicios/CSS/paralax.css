@@ -1,0 +1,52 @@
+.parallax {
+    /* The image used */
+    background-image: url("../IMG/airbourne.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+    background-color: red;
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.debajo {
+    min-height: 500px;
+    background-color: blue;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("../IMG/metallica.webp");
+  
+    /* Set a specific height */
+    min-height: 750px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.debajo2 {
+    min-height: 500px;
+    background-color: blue;
+}
+h2{
+    text-align: center;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+
+.parallax2 h2{
+    text-align: center;
+    padding-top: 22rem;
+    padding-bottom: 22rem;
+    color: lightslategray;
+}
