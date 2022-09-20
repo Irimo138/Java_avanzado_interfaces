@@ -1,0 +1,13 @@
+.cuadrado{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    background-color: aqua;
+    transition: all 1s ease-out ;
+}
+
+body:hover .cuadrado{
+    left: 200px;
+    background-color: orangered;
+}

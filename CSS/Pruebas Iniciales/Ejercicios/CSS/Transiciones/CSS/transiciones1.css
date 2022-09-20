@@ -1,0 +1,10 @@
+.cuadrado{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    transition: background-color 0.3s linear 0.1s;
+}
+
+.cuadrado:hover{
+    background-color: orangered;
+}
