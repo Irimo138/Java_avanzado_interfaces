@@ -1,0 +1,64 @@
+body{
+    background-color: aqua;
+    display: flex;
+    padding-left: 2vw;
+    flex-direction: row;
+    justify-content : center;
+}
+.bola{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: red;
+    animation: bota 1s ease-in-out infinite;
+}
+.cuerpo{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: brown;
+}
+
+
+@keyframes bota {
+    0% {
+    transform: translateY(0vh);
+    }
+    40% {
+    transform: translateY(30vh);
+    width: 40px;
+    }
+    50%{
+    width: 60px;
+    }
+    60% {
+    transform: translateY(30vh);
+    width: 40px;
+    }
+    100% {
+    transform: translateY(0vh);
+    }  
+}
+.zombrita{
+    margin-top: 30vh;
+    width: 40px;
+    height: 10px;
+    margin-left: 0.5vw;
+    background-color: black;
+    border-radius: 100%;
+    animation: aplasta 1s ease-in-out infinite;
+}
+@keyframes aplasta {
+    30% {
+        height: 10px;
+    }
+    50% {
+        height: 4px;
+    }
+    70% {
+        height: 10px;
+    }
+     
+}

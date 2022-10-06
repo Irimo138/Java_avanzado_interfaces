@@ -1,0 +1,23 @@
+.caja{
+    border: 1px solid black;
+    width:10vw;
+}
+
+input{
+    -webkit-appearance: none;
+    height: 10px;
+    width: 100%;
+}
+#txek::before{
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: red;
+    content:"dd";
+    color:red;
+    height: 10px;
+    width: 40px;
+}
+
+#txek:checked{
+    transform: translate(74%, 0);
+}

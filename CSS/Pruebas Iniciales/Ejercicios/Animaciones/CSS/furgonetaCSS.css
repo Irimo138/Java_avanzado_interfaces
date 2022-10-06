@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow-x: hidden;
+}
+.fondo{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../IMG/Img_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    
+}
+.espacio{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: end;
+    align-items: center;
+}
+
+.palmeras{
+    width: 200vw;
+    height: 30vh;
+    background-image: url(../../IMG/Img_02.png);
+    animation: mueveCarretera 5s linear infinite;
+    position: absolute;
+    z-index: 1;
+
+}
+.furgoneta{ 
+    margin-bottom: 16vh;
+    width: 12.5vw;
+    height: 12.5vh;
+    background-image: url(../../IMG/Img_06.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    z-index: 5;
+    animation: mueveScoobydoo 1s linear infinite;
+}
+
+@keyframes mueveCarretera{
+    0% {
+        transform:translateX(0px);
+    }
+    100%{
+        transform: translateX(-50vw);
+    } 
+}
+
+@keyframes mueveScoobydoo{
+    0% {
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    } 
+    100% {
+        transform:translateY(0px);
+    }
+}

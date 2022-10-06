@@ -1,0 +1,16 @@
+.cuadrado{
+    animation: desaparece infinite ease-out ;
+}
+
+@keyframes desaparece {
+    0% {
+    transform: translateX(0vh);
+    }
+    50% {
+    transform: translateX(60vh);
+    }
+    100% {
+    transform: translateX(0vh);
+    }
+    
+}

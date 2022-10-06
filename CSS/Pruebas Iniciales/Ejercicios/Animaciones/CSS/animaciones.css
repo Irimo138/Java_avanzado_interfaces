@@ -1,0 +1,187 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.container div{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.bolafija:nth-child(1){
+    background-color: red;
+}
+.bolafija:nth-child(2){
+    background-color: green;
+}
+.bolafija:nth-child(3){
+    background-color: cyan;
+}
+.bolafija:nth-child(4){
+    background-color: magenta;
+}
+.bolafija:nth-child(5){
+    background-color: purple;
+}
+#uno{
+    background-color: red;
+    animation: agranda1 2s ease-in-out infinite;
+}
+#dos{
+    background-color: green;
+    animation: agranda1 2s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+#tre{
+    background-color: cyan;
+    animation: agranda1 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+#cua{
+    background-color: magenta;
+    animation: agranda1 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+#cin{
+    background-color: purple;
+    animation: agranda1 2s ease-in-out infinite;
+    animation-delay: 0.8s;
+    
+}
+
+@keyframes agranda1 {
+    0% {
+    transform:scale(1);
+    opacity: 1;
+    }
+    100%{
+    transform: scale(2);
+    opacity: 0 ;
+    } 
+}
+
+/* Animacion de lineas*/
+
+.container2{
+    background-color: darkgrey;
+    width: 8.5vw;
+    height:20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.linea{
+    content:"";
+    background-color: blue;
+    width: 0.5vw;
+    border-radius: 25px;
+}
+
+.linea:nth-child(odd){
+    height:10vh;
+    animation: lineaAgranda 1s ease-in-out infinite;
+}
+
+.linea:nth-child(even){
+    height:10vh;
+    animation: lineaAgranda2 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.linea:nth-child(3){
+    height:10vh;
+    animation: lineaAgranda2 0.8s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes lineaAgranda {
+    0% {
+    transform:scale(1);
+    }
+    50%{
+    transform: scale(2);
+    } 
+    100%{
+    transform: scale(1);
+    } 
+}
+
+@keyframes lineaAgranda2 {
+    0% {
+    transform:scale(1);
+    }
+    50%{
+    transform: scale(2);
+    } 
+    100%{
+    transform: scale(1);
+    } 
+}
+
+.container3{
+    background-color: lightblue;
+    width:40vw;
+    height:70vh;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bolacuadro{
+    background-color: orangered;
+    width:12vw;
+    margin-bottom: 2VH;
+    height:auto;
+    border-radius: 100%;
+}
+
+.bolacuadro:nth-child(1){
+    animation: bolaAgranda .5s ease-in-out infinite;   
+}
+.bolacuadro:nth-child(2){
+    animation: bolaAgranda .75s ease-in-out infinite;   
+}
+.bolacuadro:nth-child(3){
+    animation: bolaAgranda 2.5s ease-in-out infinite;   
+}
+.bolacuadro:nth-child(4){
+    animation: bolaAgranda .65s ease-in-out infinite;   
+}
+.bolacuadro:nth-child(5){
+    animation: bolaAgranda 1.5s ease-in-out infinite;   
+}
+.bolacuadro:nth-child(6){
+    animation: bolaAgranda .95s ease-in-out infinite;   
+}
+.bolacuadro:nth-child(7){
+    animation: bolaAgranda .5s ease-in-out infinite;   
+}
+.bolacuadro:nth-child(8){
+    animation: bolaAgranda 1s ease-in-out infinite;   
+}
+.bolacuadro:nth-child(9){
+    animation: bolaAgranda 1.25s ease-in-out infinite;   
+}
+
+@keyframes bolaAgranda {
+    0% {
+    transform:scale(1);
+    }
+    50%{
+    transform: scale(0.5);
+    } 
+    100%{
+    transform: scale(1);
+    } 
+}
